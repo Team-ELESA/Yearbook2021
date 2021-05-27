@@ -7,6 +7,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SEComponent } from './se/se.component';
 import { TEComponent } from './te/te.component';
 import { BEComponent } from './be/be.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { BEComponent } from './be/be.component';
     HomepageComponent,
     SEComponent,
     TEComponent,
-    BEComponent
+    BEComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
