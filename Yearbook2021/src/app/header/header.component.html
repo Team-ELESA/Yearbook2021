@@ -20,7 +20,17 @@
     </div>
 </nav>
 
-<section class="home">
+<section *ngIf="router.url === '/'" class="homeBanner">
+    
+</section>
+
+<section *ngIf="router.url === '/be'" class="beBanner">
+</section>
+
+<section *ngIf="router.url === '/te'" class="teBanner">
+</section>
+
+<section *ngIf="router.url === '/se'" class="seBanner">
 </section>
 
 <!-- Jquery needed -->
