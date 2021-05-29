@@ -9,6 +9,7 @@ import { TEComponent } from './te/te.component';
 import { BEComponent } from './be/be.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { DevsComponent } from './devs/devs.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     TEComponent,
     BEComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DevsComponent
   ],
   imports: [
     BrowserModule,

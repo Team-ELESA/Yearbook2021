@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,9 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: Router
+  ) { }
 
   ngOnInit(): void {
     $('.navTrigger').click(function () {

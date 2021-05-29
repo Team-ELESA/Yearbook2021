@@ -1,0 +1,188 @@
+@import './../../styles.scss';
+.container-fluid{
+    background-color: $secondary;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection{
+  background-color:yellowgreen;
+  color: black;
+}
+
+body {
+  background: linear-gradient(to bottom, #0099cc 0%, #003366 100%);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%;
+}
+
+body > p{
+  font-family: 'Montserrat', sans-serif;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 50px;
+  border-top:1px solid whitesmoke;
+  border-bottom:1px solid whitesmoke;
+  text-align: center;
+}
+
+
+
+
+.container > div {
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  height: 300px;
+  box-shadow: 0 10px 10px 5px rgba(0,0,0,.25);
+  transition: all 300ms 50ms ease-in-out;
+  color: white;
+  position: relative;
+  width: 100%;
+  max-width:200px;
+  min-width:150px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+.content {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  transition: all 300ms 50ms ease-in-out;
+  /* z-index: 2; */
+}
+
+
+.container > div .content::after{
+  content: '';
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:0;
+  background-image: linear-gradient(to bottom,
+                    rgba(0,0,0,.01),
+                    rgba(0,0,0,.8)
+  );
+  opacity: .1;
+  transition: all 300ms 50ms ease-in-out;
+  border-radius:5px;
+}
+
+.container > div img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms 50ms ease-in-out;
+}
+
+.container > div h3{
+/*   border: 2px solid red; */
+  font-family: 'Viga', sans-serif;
+  text-transform: uppercase;
+  margin-bottom:20px;
+  transition: all 200ms 50ms ease-in-out;
+}
+
+.container> div p{
+/*   border: 2px solid blue; */
+  font-family: 'Playball', cursive;
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 1;
+  transition: all 200ms 50ms ease-in-out;
+  color: transparent;
+  opacity: 0;
+  width:90%;
+  margin:auto;
+}
+
+.container> div p ,
+.container> div h3{
+  position: relative;
+  top:250px;
+  z-index:1;
+}
+
+.container> div:hover{
+  box-shadow: 0 20px 15px 10px rgba(0,0,0,.15);
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.container> div:hover .content{
+  transform:scale(1.1)
+}
+
+.container> div:hover h3,
+.container> div:hover p{
+  transform: translateY(-200px)
+}
+
+.container> div:hover p{
+  opacity:1;
+  color: white;
+}
+
+.container> div .content:hover:after{
+  opacity:1;
+}
+
+@media(max-width: 1000px) {
+  body{
+    height:150vh;
+  }
+  
+}
+
+@media(max-width: 590px) {
+  body{
+    height: 300vh;
+  }
+  
+  .container> div{
+    min-width: 300px
+  }
+}
+
+@media(max-height:450px){
+  body{
+    height: 200vh;
+  }
+}
+
+@media(max-height:300px){
+  body{
+    height: 300vh;
+  }
+}
+
+@media(max-height:200px){
+  body{
+    height: 300vh;
+  }
+}
+
+@media(max-height:100px){
+  body{
+    height: 300vh;
+  }
+}
