@@ -41,82 +41,24 @@
   </div>
 
   <div class="teachers">
-        <div class="row mb-4" style="text-align: center ;">
-            <h1>Teachers Of SKNCOE</h1>
-        </div>
+      <div class="row mb-4" style="text-align: center ;">
+          <h1>Teachers Of SKNCOE</h1>
+      </div>
   
 
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-            <div class="container">
-                <div class="box">
-                    <div class="content" style="background-image: url('https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/parques-nacionales/vistas-pn-ordesa-monte-perdido-s160022267.jpg_1259223088.jpg'); background-size : cover;">
-                      <h3>Mountain</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad corporis laborum obcaecati ipsum id!</p>
-                    </div>
-                  </div>
-            </div>
+
+      <div *ngFor="let teacher of teachers" class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+        <div class="container">
+            <div class="box">
+                <div class="content" style="background-image: url('{{teacher.uploadyourphotograph}}'); background-size : cover">
+                  <h3>{{teacher.firstname}} {{teacher.lastname}}</h3>teacher.uploadyourphotograph
+                  <p>{{teacher.shareyourexperienceswishesadvicegeneralthoughts}}</p>
+                </div>
+              </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-            <div class="container">
-                <div class="box">
-                    <div class="content" style="background-image: url('https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/parques-nacionales/vistas-pn-ordesa-monte-perdido-s160022267.jpg_1259223088.jpg'); background-size : cover;">
-                      <h3>Mountain</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad corporis laborum obcaecati ipsum id!</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-            <div class="container">
-                <div class="box">
-                    <div class="content" style="background-image: url('https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/parques-nacionales/vistas-pn-ordesa-monte-perdido-s160022267.jpg_1259223088.jpg'); background-size : cover;">
-                      <h3>Mountain</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad corporis laborum obcaecati ipsum id!</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-            <div class="container">
-                <div class="box">
-                    <div class="content" style="background-image: url('https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/parques-nacionales/vistas-pn-ordesa-monte-perdido-s160022267.jpg_1259223088.jpg'); background-size : cover;">
-                      <h3>Mountain</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad corporis laborum obcaecati ipsum id!</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-            <div class="container">
-                <div class="box">
-                    <div class="content" style="background-image: url('https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/parques-nacionales/vistas-pn-ordesa-monte-perdido-s160022267.jpg_1259223088.jpg'); background-size : cover;">
-                      <h3>Mountain</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad corporis laborum obcaecati ipsum id!</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-            <div class="container">
-                <div class="box">
-                    <div class="content" style="background-image: url('https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/parques-nacionales/vistas-pn-ordesa-monte-perdido-s160022267.jpg_1259223088.jpg'); background-size : cover;">
-                      <h3>Mountain</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad corporis laborum obcaecati ipsum id!</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-            <div class="container">
-                <div class="box">
-                    <div class="content" style="background-image: url('https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/parques-nacionales/vistas-pn-ordesa-monte-perdido-s160022267.jpg_1259223088.jpg'); background-size : cover;">
-                      <h3>Mountain</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad corporis laborum obcaecati ipsum id!</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
+      </div>
+  
     </div>
 
   </div>
