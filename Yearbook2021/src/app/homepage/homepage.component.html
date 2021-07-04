@@ -1,12 +1,13 @@
 <div class="container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
-  
-  <div class="row mb-4" style="text-align: center ;">
-    <h1>MESSAGE FROM HOD</h1>
-  </div>
 
-  <div class="row">
+
+  <div class="row aboutMeCard">
+    <div class="row mb-3" style="text-align: center ;">
+      <h1>MESSAGE FROM HOD</h1>
+    </div>
     <div class="col-sm-12 col-xs-12 col-lg-3" style="align-content: center; text-align: center;">
-      <img src="./../../assets/Images/hod.jpg" alt="" style="width: 220px;height: 220px;border-radius: 50%;margin: 20px;object-fit: cover;object-position: center right;"> 
+      <img src="./../../assets/Images/hod.jpg" alt=""
+        style="width: 220px;height: 220px;border-radius: 50%;margin: 20px;object-fit: cover;object-position: center right;">
       <div style="text-align: right;">
         <p style="text-align: center;">
           Dr. S. K. Jagtap
@@ -19,48 +20,45 @@
     <div class="col-sm-12 col-xs-12 col-lg-9" style="text-align: justify; padding: 20px">
       <p class="pb-1">Dearest Students,</p>
       <p class="pb-2">
-        It gives me great pleasure to write a few words as prologue for our first ever in-house yearbook ‘   ’. It 
-        is exclusively meant to cherish and preserve our memories for the year 2020-21. This yearbook acts as a 
-        platform to display creative thoughts and literary talents of many students. Team ELESA deserves a special 
+        It gives me great pleasure to write a few words as prologue for our first ever in-house yearbook ‘ ’. It
+        is exclusively meant to cherish and preserve our memories for the year 2020-21. This yearbook acts as a
+        platform to display creative thoughts and literary talents of many students. Team ELESA deserves a special
         appreciation for their efforts in compiling this publication.
       </p>
       <p class="pb-2">
-        The all-round progress of our students is of paramount importance and our most primary goal. 
-        It is indeed a matter of great pride that our students consistently excel in academic and co-curricular 
-        activities. I feel proud of being the Head of Electronics & Telecommunications Engineering Department of 
+        The all-round progress of our students is of paramount importance and our most primary goal.
+        It is indeed a matter of great pride that our students consistently excel in academic and co-curricular
+        activities. I feel proud of being the Head of Electronics & Telecommunications Engineering Department of
         such a magnificent institution dedicated for the betterment of students.
       </p>
       <p class="pb-2">
-        The main focus of SKNCOE is to empower the students with sound knowledge, wisdom, experience and 
-        methodological training both at academic level and in the highly competitive global market. I take this 
-        opportunity to greet and commend all the students, faculty and administrative staff for creating and 
-        maintaining an aura of optimism at out department. I extend my wishes to all the readers of this message 
+        The main focus of SKNCOE is to empower the students with sound knowledge, wisdom, experience and
+        methodological training both at academic level and in the highly competitive global market. I take this
+        opportunity to greet and commend all the students, faculty and administrative staff for creating and
+        maintaining an aura of optimism at out department. I extend my wishes to all the readers of this message
         and wish you the best for scaling bigger success and achieving newer heights in the coming days.
       </p>
     </div>
   </div>
 
   <div class="teachers">
-      <div class="row mb-4" style="text-align: center ;">
-          <h1>Teachers Of SKNCOE</h1>
-      </div>
-  
-
-    <div class="row">
-
-      <div *ngFor="let teacher of teachers" class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-        <div class="container">
-            <div class="box">
-                <div class="content" style="background-image: url('{{teacher.uploadyourphotograph}}'); background-size : cover">
-                  <h3>{{teacher.firstname}} {{teacher.lastname}}</h3>teacher.uploadyourphotograph
-                  <p>{{teacher.shareyourexperienceswishesadvicegeneralthoughts}}</p>
-                </div>
-              </div>
-        </div>
-      </div>
-  
+    <div class="row mb-4" style="text-align: center ;">
+      <h1>Teachers Of SKNCOE</h1>
     </div>
 
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let teacher of teachers">
+        <div class="container">
+          <div class="box" [ngStyle]="{'background': 'url(' + teacher.uploadyourphotograph + ') no-repeat'}" >
+            <div class="content">
+              <h5>{{teacher.firstname}} {{teacher.lastname}}</h5>
+              <p>{{teacher.shareyourexperienceswishesadvicegeneralthoughts}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-    
+
 </div>

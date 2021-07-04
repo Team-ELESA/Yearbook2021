@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../GoogleSheetsData/data.service';
-import {DomSanitizer} from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
+import { TeacherResponse } from '../interfaces';
 
 @Component({
   selector: 'app-homepage',
@@ -9,7 +10,10 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 
 export class HomepageComponent implements OnInit {
-  teachers: any[];
+  tempTeachers: TeacherResponse[];
+  teachers: Array<TeacherResponse> = [];
+  image_url: string;
+  receivedUrl: string;
 
   constructor(
     private dataService: DataService,
@@ -17,14 +21,19 @@ export class HomepageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.dataService.getSheetData('teachers').subscribe(res => {
-       this.teachers = res
-      console.log(this.teachers);
+    this.dataService.getSheetData('teachers').subscribe((res: TeacherResponse[]) => {
+      this.tempTeachers = res
+      this.tempTeachers.forEach((teacher, index)=> {
+        if (!teacher.tf) {
+          const ConstUrl = 'https://drive.google.com/thumbnail?id='
+          const id = teacher.uploadyourphotograph.split('=')[1]
+  
+          teacher.uploadyourphotograph = ConstUrl + id
+
+          this.teachers.push(teacher)
+        }
+      });
+      // console.log(this.teachers)
     })
   }
-
-  getSanitized(url){
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url)
-  }
-
 }

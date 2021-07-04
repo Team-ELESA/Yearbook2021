@@ -82,8 +82,9 @@ body {
 
 .beBanner {
     width: 100%;
-    height: 100vh;
-    background-image: url(./../../assets/Images/beBg.jpg);
+    height: 15vh;
+    // background-image: url(./../../assets/Images/beBg.jpg);
+    background-color: transparent;
     background-position: center top;
 	background-size:cover;
 }

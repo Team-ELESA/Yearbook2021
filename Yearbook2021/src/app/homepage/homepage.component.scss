@@ -38,8 +38,22 @@ body > p{
   text-align: center;
 }
 
-
-
+.aboutMeCard {
+    font-family: Apple Chancery, Georgia, 'Times New Roman', Times, serif;
+    transform-style: preserve-3d;
+    width: 90%;
+    height: 70%;
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0.048);
+    color: rgb(0, 0, 0);
+    z-index: 2;
+    border-radius: 1.5rem;
+    padding: 5%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    -webkit-box-shadow: 0px 4px 7px 2px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 5px 10px 4px rgba(3, 3, 3, 0.281);
+}
 
 .container > div {
   background-color: white;
@@ -116,7 +130,7 @@ body > p{
 }
 
 .container> div p ,
-.container> div h3{
+.container> div h5{
   position: relative;
   top:230px;
   z-index:1;
@@ -132,9 +146,12 @@ body > p{
   transform:scale(1.1)
 }
 
-.container> div:hover h3,
-.container> div:hover p{
+.container> div:hover h5{
   transform: translateY(-200px)
+}
+
+.container> div:hover p{
+  transform: translateY(-180px)
 }
 
 .container> div:hover p{
