@@ -1,5 +1,5 @@
 export interface TeacherResponse {
-    tf: string
+    tf: string | null
     timestamp: string
     firstname: string
     lastname: string
@@ -10,7 +10,7 @@ export interface TeacherResponse {
 }
 
 export interface StudentResponse {
-    tf: string
+    tf: string | null
     describeyourexperiencejourneymemoriesinaquote: string
     firstname: string
     'kindlyprovideyourfullnamebelowtoprovideyourconsenttoelesatoincludeyourphotoandquoteintheyearbook2021.': string
