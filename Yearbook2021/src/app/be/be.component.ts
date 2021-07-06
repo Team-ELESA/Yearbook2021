@@ -29,7 +29,7 @@ export class BEComponent implements OnInit {
           this.BE_students.push(student)
         }
       });
-      console.log(this.BE_students)
+      // console.log(this.BE_students)
     })
   }
 }
