@@ -27,7 +27,7 @@
 .col{
   width: 100%;
   max-width: 200px;
-  min-width: 150px;
+  // min-width: 150px;
   margin: 9px;
   cursor: pointer;
   overflow: hidden;
@@ -59,7 +59,7 @@
 	        backface-visibility: hidden;
 	text-align: center;
 	min-height: 280px;
-	height: 500px;
+	height: 340px;
 	border-radius: 10px;
 	color: #fff;
 	font-size: 1rem;
@@ -106,7 +106,7 @@
 .inner{
     -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
             transform: translateY(-50%) translateZ(60px) scale(0.94);
-    top: 70%;
+    bottom: -110%;
     position: absolute;
     left: 0;
     width:100%;

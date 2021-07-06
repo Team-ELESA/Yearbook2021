@@ -9,8 +9,9 @@ export class DataService {
 
   httpOptions: any;
   GSheetConst: any = {
-    'students': '1YzAJK1vWjMDHLsxz3zJ8qoUdFS3SPwf_ckwdIC_PjMY',
-    'teachers': '1hsFSRAkdpNfXN4X_fhrKQxCBU8th9YKX0LE5pcNpGJs'
+    'students': '1uMuleRQ_smf6T_YoDmYumDW9qBNxL25GlZUF8rJWR-E', // Second sheet without grid id. Owner - ELESA
+    'teachers': '',
+    'core': ''
   }
 
   constructor(private http: HttpClient) {

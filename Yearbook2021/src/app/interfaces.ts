@@ -19,3 +19,11 @@ export interface StudentResponse {
     uploadyourphotograph: string
     'yearfortheacademicyear2020-21': string
 }
+
+export interface CoreResponse {
+    firstname: string 
+    lastname: string 
+    'yearfortheacademicyear2020-21': string
+    uploadyourphotograph: string 
+    describeyourexperiencejourneymemoriesinaquote: string
+}
