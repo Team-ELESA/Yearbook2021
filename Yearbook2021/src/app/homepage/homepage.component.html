@@ -42,11 +42,11 @@
   </div>
 
   <div class="teachers">
-    <div class="row mb-4" style="text-align: center ;">
-      <h1>Teachers Of SKNCOE</h1>
+    <div class="row mb-4" style="text-align: center; font-family:Raleway;">
+      <h1><b>Teachers Of SKNCOE</b></h1>
     </div>
 
-    <div class="row mb-4" style="text-align: center ;">
+    <div class="row mb-4" style="text-align: center; font-family:Raleway;">
       <h2>
         When you teach <br>
         Your words just flow <br>
@@ -67,7 +67,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let teacher of teachers">
         <div class="container">
-          <div class="box" [ngStyle]="{'background': 'transparent url(' + teacher.uploadyourphotograph + ') no-repeat center center'}" >
+          <div class="box" [ngStyle]="{'background': '#aaaaaa url(' + teacher.uploadyourphotograph + ') no-repeat center center'}" >
             <div class="content">
               <h5>{{teacher.firstname}} {{teacher.lastname}}</h5>
               <p>{{teacher.shareyourexperienceswishesadvicegeneralthoughts}}</p>
