@@ -20,7 +20,7 @@
     <div class="col-sm-12 col-xs-12 col-lg-9" style="text-align: justify; padding: 20px">
       <p class="pb-1">Dearest Students,</p>
       <p class="pb-2">
-        It gives me great pleasure to write a few words as prologue for our first ever in-house yearbook ‘ ’. It
+        It gives me great pleasure to write a few words as prologue for our first ever in-house yearbook ‘Reminiscence’. It
         is exclusively meant to cherish and preserve our memories for the year 2020-21. This yearbook acts as a
         platform to display creative thoughts and literary talents of many students. Team ELESA deserves a special
         appreciation for their efforts in compiling this publication.
@@ -67,9 +67,9 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let teacher of teachers">
         <div class="container">
-          <div class="box" [ngStyle]="{'background': '#aaaaaa url(' + teacher.uploadyourphotograph + ') no-repeat center center'}" >
+          <div class="box" [ngStyle]="{'background': '#DDDDDD url(' + teacher.uploadyourphotograph + ') no-repeat center center'}" >
             <div class="content">
-              <h5>{{teacher.firstname}} {{teacher.lastname}}</h5>
+              <h5 style="color: #2B2B2B;" >{{teacher.firstname}} {{teacher.lastname}}</h5>
               <p>{{teacher.shareyourexperienceswishesadvicegeneralthoughts}}</p>
             </div>
           </div>
@@ -77,5 +77,9 @@
       </div>
     </div>
   </div>
+
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
 
 </div>
