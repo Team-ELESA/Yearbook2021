@@ -20,7 +20,7 @@
             
         <div class="row" style="align-content: center; justify-content: center; text-align: center;">
 
-            <div class="col-xs-10 col-sm-4 col-md-3 col-lg-2 m-2" ontouchstart="this.classList.toggle('hover');" *ngFor="let mem of core">
+            <div class="col-xs-10 col-sm-4 col-md-3 col-lg-2 m-2 p-2" ontouchstart="this.classList.toggle('hover');" *ngFor="let mem of core">
                 <div class="container">
                     <div class="front"
                         [ngStyle]="{'background': 'url(' + mem.uploadyourphotograph + ') no-repeat center center'}">
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-10 col-sm-4 col-md-3 col-lg-2 m-2" ontouchstart="this.classList.toggle('hover');" *ngFor="let student of BE_students">
+            <div class="col-xs-10 col-sm-4 col-md-3 col-lg-2 m-2 p-2" ontouchstart="this.classList.toggle('hover');" *ngFor="let student of BE_students">
                 <div class="container">
                     <div class="front"
                         [ngStyle]="{'background': 'url(' + student.uploadyourphotograph + ') no-repeat center center'}">
