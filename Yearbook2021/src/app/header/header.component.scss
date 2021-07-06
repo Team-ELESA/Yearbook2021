@@ -82,7 +82,7 @@ body {
 
 .beBanner {
     width: 100%;
-    height: 15vh;
+    height: 100vh;
     // background-image: url(./../../assets/Images/beBg.jpg);
     background-color: transparent;
     background-position: center top;
@@ -91,7 +91,7 @@ body {
 
 .teBanner {
     width: 100%;
-    height: 15vh;
+    height: 100vh;
     // background-image: url(./../../assets/Images/teBg.jpg);
     background-position: center top;
 	background-size:cover;
@@ -99,7 +99,7 @@ body {
 
 .seBanner {
     width: 100%;
-    height: 15vh;
+    height: 100vh;
     // background-image: url(./../../assets/Images/seBg.jpg);
     background-position: center top;
 	background-size:cover;
@@ -115,6 +115,89 @@ body {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    font-family: -apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif,arial,Tahoma,verdana;
+    .title {
+      display: inline-block;
+      transform: skewY(-5deg);
+      font-size: calc(90vw / 5);
+      white-space: nowrap;
+      line-height: 1.15;
+    }
+    
+    .title .-t,
+    .title .-b {
+      font-size: 25%;
+      font-weight: 200;
+      text-transform: lowercase;
+    }
+     
+    .title .-t {
+      
+    }
+    .title .-c {
+      display: block;
+      --gradient: linear-gradient(80deg, #163172, #1e56a0);
+      background-image: var(--gradient);
+      background-clip: text;
+      font-size: 70%;
+      /* for stupid WEBKIT -_- */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      /* for stupid WEBKIT -_- */
+      color: transparent;
+      position: relative;
+      text-align: center;
+      margin: .05em 0;
+      padding: .05em 0;
+      font-weight: 900;
+      position: relative;
+    }
+    
+    .title .-c::before,
+    .title .-c::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: var(--gradient), var(--gradient);
+      background-repeat: no-repeat;
+      background-position: top left, bottom left;
+      background-size: auto .05em;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .title .-c::before {
+      filter: blur(5px);
+      z-index: 1;
+    }
+    
+    .title .-c::after {
+      z-index: 2;
+      /* for stupid WEBKIT -_- */
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      filter: blur(.025px);
+      /* for stupid WEBKIT -_- */
+    }
+    
+    .title .-b {
+      text-align: right;
+    }
+  }
 
 
 /* Media qurey section */
