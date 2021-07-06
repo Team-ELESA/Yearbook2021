@@ -198,6 +198,12 @@ body > p{
   opacity:1;
 }
 
+hr {
+  background-color: #003366;
+  height: 5px;
+  margin: 5%;
+} 
+
 @media(max-width: 1000px) {
   body{
     height:150vh;

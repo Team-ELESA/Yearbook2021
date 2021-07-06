@@ -40,13 +40,14 @@
       </p>
     </div>
   </div>
-
-  <div class="teachers">
+  
+  <hr>
+  <div class="teachers mt-2">
     <div class="row mb-4" style="text-align: center; font-family:Raleway;">
       <h1><b>Teachers Of SKNCOE</b></h1>
     </div>
 
-    <div class="row mb-4" style="text-align: center; font-family:Raleway;">
+    <div class="row mb-5" style="text-align: center; font-family:Raleway;">
       <h2>
         When you teach <br>
         Your words just flow <br>
@@ -62,9 +63,10 @@
         My thanks to you abundantly <br>
       </h2>
     </div>
+    <hr>
 
 
-    <div class="row">
+    <div class="row m-5">
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" *ngFor="let teacher of teachers">
         <div class="container">
           <div class="box" [ngStyle]="{'background': '#DDDDDD url(' + teacher.uploadyourphotograph + ') no-repeat center center'}" >
