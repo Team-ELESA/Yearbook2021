@@ -106,7 +106,7 @@
 .inner{
     -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
             transform: translateY(-50%) translateZ(60px) scale(0.94);
-    bottom: -110%;
+    top: 135%;
     position: absolute;
     left: 0;
     width:100%;
@@ -121,7 +121,6 @@
 }
 .front .inner{
   margin-top:-80px 
-
 }
 
 .container .back{
@@ -161,7 +160,6 @@
 }
 
 .front .inner p:after{
-  content: '';
   width: 4rem;
   height: 2px;
   position: absolute;
