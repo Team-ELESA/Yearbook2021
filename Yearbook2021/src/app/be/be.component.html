@@ -1,213 +1,45 @@
 <!-- Background & animion & navbar & title -->
+
 <div class="container-fluid mt-5">
 
     <div class="wrapper">
         <div class="cols mt-5 mb-5">
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="col" ontouchstart="this.classList.toggle('hover');" *ngFor="let student of BE_students">
                 <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                    <div class="front"
+                        [ngStyle]="{'background': 'url(' + student.uploadyourphotograph + ') no-repeat center center'}">
                         <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
+                            <p style="font-size: large;" >{{student.firstname}} {{ student.lastname }}</p>
                         </div>
                     </div>
                     <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
+                        <div class="inner"style="top: 43%;" >
+                            <p style="top: -80%;">{{ student.describeyourexperiencejourneymemoriesinaquote }}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cols">
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Easy to do responsive carousel -->
 
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- https://github.com/NickPiscitelli/Glider.js -->
 
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
 
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
-                        <div class="inner">
-                            <p>Acirassi</p>
-                            <span>Lorem ipsum</span>
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div class="inner">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum
-                                c.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
 
-</div>
+
+<!-- <div class="mx-auto border rounded aboutMeCard"
+    style="margin-top: 5%; margin-bottom: 10%; width: 70%; place-content: center;">
+    <div class="text-center col-md-12 mt-5" style="height: 50vh; margin-top: 20%; ">
+        <h1>
+            Seniors
+            <br>
+            <br>
+            The best People the college had!
+        </h1>
+    </div>
+</div> -->

@@ -110,7 +110,8 @@
     position: absolute;
     left: 0;
     width:100%;
-    padding: 2rem;
+    padding: 0.5rem;
+    padding-top: 4rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     outline: 1px solid transparent;
@@ -119,10 +120,12 @@
     z-index: 2;
 }
 .front .inner{
-  margin-top:60px ;
+  margin-top:-80px 
+
 }
 
 .container .back{
+  color: transparent;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
@@ -137,6 +140,7 @@
 }
 
 .container:hover .back{
+  color: white;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
@@ -151,7 +155,7 @@
 }
 
 .front .inner p{
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   position: relative;
 }
