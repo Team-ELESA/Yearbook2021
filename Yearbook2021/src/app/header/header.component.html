@@ -2,14 +2,14 @@
     <div class="container">
         <div class="logo">
             <a href="">
-                <img src="../../assets/Images/logo_blue_png.png" alt="">
+                <img [src]="url + 'assets/Images/logo_blue_png.png'" alt="">
             </a>           
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-                <li><a href="/be" style="font-weight: 500;">BE</a></li>
-                <li><a href="/te" style="font-weight: 500;">TE</a></li>
-                <li><a href="/se" style="font-weight: 500;">SE</a></li>
+                <li><a [href]="url + 'be'" style="font-weight: 500;">BE</a></li>
+                <li><a [href]="url + 'te'" style="font-weight: 500;">TE</a></li>
+                <li><a [href]="url + 'se'" style="font-weight: 500;">SE</a></li>
             </ul>
         </div>
         <span class="navTrigger">

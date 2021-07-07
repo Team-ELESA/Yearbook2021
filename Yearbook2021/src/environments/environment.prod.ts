@@ -1,3 +1,5 @@
+
 export const environment = {
-  production: true
+  production: true,
+  baseDomain: 'https://team-elesa.github.io/Yearbook2021/'
 };

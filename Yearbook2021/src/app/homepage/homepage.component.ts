@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../GoogleSheetsData/data.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { TeacherResponse } from '../interfaces';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-homepage',
@@ -14,6 +15,7 @@ export class HomepageComponent implements OnInit {
   teachers: Array<TeacherResponse> = [];
   image_url: string;
   receivedUrl: string;
+  url: string = environment.baseDomain
 
   constructor(
     private dataService: DataService,
