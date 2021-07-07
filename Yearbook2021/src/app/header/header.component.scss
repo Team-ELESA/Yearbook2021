@@ -510,7 +510,7 @@ body {
 }
 @media all and (max-width:700px){
     .nav div.logo a img {
-       height: 50px;
+       height: 80px;
     }
 	.myP {
 		padding:2%;
@@ -518,9 +518,15 @@ body {
 }
 @media all and (max-width:650px){
     .nav div.logo a img {
-       height: 20px;
+       height: 50px;
+    }
+    .homeBanner h3 {
+        transform: translateY(300%);
+    }
+    .homeBanner p {
+        transform: translateY(400%);
     }
 	.homeBanner h1 {
-        transform: translateY(200%);
+        transform: translateY(120%);
     }
 }
